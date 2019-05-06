@@ -38,6 +38,8 @@ publish {
     publishVersion = '1.0.0'
     //项目介绍，可以不写
     desc = 'Android Open Code'
+    //项目主页，可以不写
+    website = 'https://github.com/Yuye584312311/WXAuthorize'
 }
 
 dependencies {
