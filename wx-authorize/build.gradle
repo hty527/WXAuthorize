@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //编译发布至Bintray时报错处理
+    lintOptions {
+        abortOnError false
+    }
+}
+
+//推送到Bintray配置
+publish {
+    //你的账户bintray下某个组织id
+    userOrg = 'htyopen'
+    //Maven仓库下库的包名,一本与包名相同
+    groupId = 'com.android.open'
+    //开源协议
+    licences = ['Apache-2.0']
+    //项目名称
+    artifactId = 'wx-authorize'
+    //版本号
+    publishVersion = '1.0.0'
+    //项目介绍，可以不写
+    desc = 'Android Open Code'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //微信OPEN-SDK
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.4'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+}
