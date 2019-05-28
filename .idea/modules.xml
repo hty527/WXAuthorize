@@ -3,11 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WXAuthorize.iml" filepath="$PROJECT_DIR$/WXAuthorize.iml" />
-      <module fileurl="file://D:\AndroidStudioProjects\WXAuthorize\WXAuthorize.iml" filepath="D:\AndroidStudioProjects\WXAuthorize\WXAuthorize.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\AndroidStudioProjects\WXAuthorize\app\app.iml" filepath="D:\AndroidStudioProjects\WXAuthorize\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/wx-authorize/wx-authorize.iml" filepath="$PROJECT_DIR$/wx-authorize/wx-authorize.iml" />
-      <module fileurl="file://D:\AndroidStudioProjects\WXAuthorize\wx-authorize\wx-authorize.iml" filepath="D:\AndroidStudioProjects\WXAuthorize\wx-authorize\wx-authorize.iml" />
     </modules>
   </component>
 </project>
